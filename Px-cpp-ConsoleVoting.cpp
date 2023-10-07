@@ -2,12 +2,15 @@
 
 int main()
 {
+    // declare and initialize variables
     char vote, operation;
     int totalVotes;
     int alphaVotes = 0;
     int betaVotes = 0;
     int cookieVotes = 0;
     bool quitVoting = false;
+    // we use while loop to iterate the code inside, while quitVoting bool variable is equal to false, meaning we will
+    //    only stop the code if the user enters a certain key; 'Q' to quit.
     while (quitVoting == false)
     {
         std::cout << "   PRESIDENTIAL ELECTIONS   " << std::endl;
@@ -18,11 +21,13 @@ int main()
         std::cout << "\n";
         std::cout << "Enter 'V'- vote, 'R'- show result and 'Q'- quit: ";
         std::cin >> operation;
+        // switch was used to track the key user inputs easily and more conveniently. 
         switch (operation)
         {
             case 'V':
                 std::cout << "Enter your vote: ";
                 std::cin >> vote;
+                // we use the increment ++ to increase the value of the variable for each votes
                 if (vote == 'A' || vote == 'a')
                 {
                     alphaVotes++;
