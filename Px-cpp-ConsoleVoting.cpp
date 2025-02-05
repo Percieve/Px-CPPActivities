@@ -27,7 +27,7 @@ int main()
             case 'V':
                 std::cout << "Enter your vote: ";
                 std::cin >> vote;
-                // we use the increment ++ to increase the value of the variable for each votes
+                // we use the increment ++ to increase the value of the variable for each vote
                 if (vote == 'A' || vote == 'a')
                 {
                     alphaVotes++;
